@@ -17,9 +17,11 @@ const FeatureJob = () => {
         Explore thousands of job opportunities with all the information you
         need. Its your future
       </p>
-      {feature.map((job) => (
-        <Cart key={job.id} job={job} />
-      ))}
+      <div className=" grid lg:grid-cols-2 mx-32">
+        {feature.map((job) => (
+          <Cart key={job.id} job={job} />
+        ))}
+      </div>
     </div>
   );
 };
