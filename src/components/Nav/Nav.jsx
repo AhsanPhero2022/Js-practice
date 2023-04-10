@@ -2,8 +2,8 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <div>
-      <div className=" mx-auto my-6  w-4/5 navbar bg-base-100">
+    <div className="">
+      <div className="mx-auto my-6  w-4/5 navbar bg-base-100">
         <div className="navbar-start">
           <h3 className="font-bold text-2xl text-green-300	">
             Programmer Job Details

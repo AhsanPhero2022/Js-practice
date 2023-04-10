@@ -8,7 +8,7 @@ const Header = () => {
         <div className="">
           <h1 className="text-4xl font-bold">
             One Step Closer To Your
-            <span className="text-green-300 ">Dream Job</span>
+            <span className="text-green-300 "> Dream Job</span>
           </h1>
           <p className="text-gray-500 py-5">
             Explore thousands of job opportunities with all the information you
