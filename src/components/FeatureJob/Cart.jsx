@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Cart = ({ job }) => {
-  const { picture, category, category1, location, title, salary, name } = job;
+const Cart = ({ job, handleAddToCart }) => {
+  const { id, picture, category, category1, location, title, salary, name } =
+    job;
+
   return (
     <div>
       <div className=" mx-5 my-12   card w-auto h-96 bg-base-100 shadow-xl">
@@ -26,7 +28,10 @@ const Cart = ({ job }) => {
           </div>
         </div>
         <Link to="/JobDetails">
-          <button className="btn w-32 m-4 ml-8 btn-success">
+          <button
+            onClick={() => handleAddToCart(id)}
+            className="btn w-32 m-4 ml-8 btn-success"
+          >
             View Details
           </button>
         </Link>
