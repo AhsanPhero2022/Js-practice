@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -11,9 +12,13 @@ const Nav = () => {
         </div>
         <div className="navbar-center">
           <div className="grid lg:grid-cols-4 gap-12">
-            <a className=" normal-case  ">Home</a>
+            <Link to="/FirstPage" className=" normal-case  ">
+              Home
+            </Link>
             <a className="text-cyan-500 underline normal-case">Statistics</a>
-            <a className="-case  ">Applied Jobs</a>
+            <Link to="/appliedJob" className="-case  ">
+              Applied Jobs
+            </Link>
             <a className="-case ">Blog</a>
           </div>
         </div>

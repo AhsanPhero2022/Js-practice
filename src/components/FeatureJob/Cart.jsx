@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Cart = ({ job }) => {
   const { picture, category, category1, location, title, salary, name } = job;
@@ -24,7 +25,11 @@ const Cart = ({ job }) => {
             <p>{salary}</p>
           </div>
         </div>
-        <button className="btn w-32 m-4 ml-8 btn-success">View Details</button>
+        <Link to="/JobDetails">
+          <button className="btn w-32 m-4 ml-8 btn-success">
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );

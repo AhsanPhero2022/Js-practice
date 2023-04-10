@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Cart from "./Cart";
 
 const FeatureJob = () => {
-  const [feature, setFeature] = useState();
+  const [feature, setFeature] = useState([]);
 
   useEffect(() => {
     fetch("companyData.json")
