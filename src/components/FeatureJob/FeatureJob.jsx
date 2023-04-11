@@ -4,6 +4,7 @@ import { addToDb } from "../../utils/fakeDB";
 
 const FeatureJob = () => {
   const [feature, setFeature] = useState([]);
+  const [showAll, setShowAll] = useState([false]);
 
   useEffect(() => {
     fetch("companyData.json")
@@ -15,6 +16,11 @@ const FeatureJob = () => {
     addToDb(id);
   };
 
+  const handleForData = () => {
+    setShowAll(!showAll);
+  };
+  const showButton = showAll ? feature : feature.slice(0, 4);
+
   return (
     <div>
       <h2 className="text-3xl font-bold text-center">Featured Jobs</h2>
@@ -22,10 +28,15 @@ const FeatureJob = () => {
         Explore thousands of job opportunities with all the information you
         need. Its your future
       </p>
-      <div className=" grid lg:grid-cols-2 mx-32">
-        {feature.map((job) => (
+      <div className=" grid grid-cols-1 lg:grid-cols-2 sm:mx-auto lg:mx-28 gap-4 ">
+        {showButton.map((job) => (
           <Cart key={job.id} handleAddToCart={handleAddToCart} job={job} />
         ))}
+      </div>
+      <div className="my-8 text-center">
+        <button onClick={() => handleForData()} className="btn btn-success ">
+          Show All
+        </button>
       </div>
     </div>
   );

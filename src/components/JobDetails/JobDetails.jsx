@@ -1,6 +1,6 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
-import { getStoredCart, removeFromDb } from "../../utils/fakeDB";
+import { getStoredCart } from "../../utils/fakeDB";
 import DetailsChile from "../DetailsChild/DetailsChile";
 
 const JobDetails = () => {
@@ -17,20 +17,11 @@ const JobDetails = () => {
     }
   }
 
-  const handleRemoveCart = (id) => {
-    console.log(id);
-    removeFromDb(id);
-  };
-
   return (
     <div>
       <h1 className="text-3xl font-semibold text-center">Job Details</h1>
       {savedCart.map((data) => (
-        <DetailsChile
-          handleRemoveCart={handleRemoveCart}
-          key={data.id}
-          data={data}
-        />
+        <DetailsChile key={data.id} data={data} />
       ))}
     </div>
   );

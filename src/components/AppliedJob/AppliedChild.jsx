@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AppliedChild = ({ data }) => {
   const { picture, title, name, location, salary, category, category1 } = data;
-  console.log(title);
+
   return (
     <div>
       <div>

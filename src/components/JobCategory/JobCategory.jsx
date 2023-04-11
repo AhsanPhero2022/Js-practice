@@ -12,7 +12,7 @@ const JobCategory = () => {
         Explore thousands of job opportunities with all the information you
         need. Its your future
       </p>
-      <div className="grid lg:grid-cols-4 mx-32 my-12 gap-4 ">
+      <div className="grid lg:grid-cols-4 lg:mx-32 sm:mx-auto my-12 gap-4 ">
         <div className=" border p-6 rounded-lg bg-cyan-50">
           <img src={firstIcon} alt="" />
           <h2 className="font-medium ">Account & Finance</h2>

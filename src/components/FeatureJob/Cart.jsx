@@ -7,7 +7,7 @@ const Cart = ({ job, handleAddToCart }) => {
 
   return (
     <div>
-      <div className=" mx-5 my-12   card w-auto h-96 bg-base-100 shadow-xl">
+      <div className=" mx-5 my-12   card w-full h-96 bg-base-100 shadow-xl">
         <figure className="w-32 p-5">
           <img className="rounded" src={picture} alt="Shoes" />
         </figure>

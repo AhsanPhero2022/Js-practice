@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const DetailsChile = ({ data, handleRemoveCart }) => {
+const DetailsChile = ({ data }) => {
   const {
-    id,
     description,
     responsiblity,
     experience,
@@ -49,8 +48,11 @@ const DetailsChile = ({ data, handleRemoveCart }) => {
               <p>{address}</p>
               <div className="card-actions justify-end"></div>
             </div>
-            <Link to="/AppliedJob">
-              <button className=" btn btn-success w-full hover:bg-purple-300">
+            <Link>
+              <button
+                onClick={() => alert("Apply successful")}
+                className=" btn btn-success w-full hover:bg-purple-300"
+              >
                 Apply Now
               </button>
             </Link>
