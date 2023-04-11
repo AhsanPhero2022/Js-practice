@@ -1,0 +1,29 @@
+[
+  {
+    "id": "001",
+    "picture": "https://camo.githubusercontent.com/a7f3db9e96268a208a485a976a27aa54ea54badf8d9ba960ce50ef1bb908eb73/68747470733a2f2f6765656b6561736b626c6f67706963732e73332d61702d736f757468656173742d322e616d617a6f6e6177732e636f6d2f706f7374732f575832303139303733302d31333533353425343032782e706e67",
+    "name": "When should we use Context Api?",
+    "description": "Context API. We can use it when we have a lot of data to pass huge child components, we should  use it so that we can easily pass data to child components from parent components. component composition is often a simpler solution than context."
+  },
+
+  {
+    "id": "002",
+    "picture": "https://www.turing.com/blog/wp-content/uploads/2022/08/Custom-React-JS-hooks-e1659597583735.jpg",
+    "name": "What is a custom Hook in React and why use it?",
+    "description": "The main reason to write a custom hook is for code reusability. For example, instead of writing the same code across multiple components that use the same common stateful logic (say a “setState” or localStorage logic), you can put that code inside a custom hook and reuse it."
+  },
+
+  {
+    "id": "003",
+    "picture": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuPvVMkBEgIFG6hbxUhvKE-BQkVRp073gjYltplT8n6k7_ZyKPFIcVvsr-FkLflWKjTK3xSlTp99_f8PdSdgjoJ3jaQJUavMOJe7CGPmCTQnlFV9sYyseYnGyC_1XlOA_ggC-r9nrF-qkjOm4M7FQR0ln57H-68laQHIjaAPd3YUbpzKmDemRVQ9eBWA/w1200-h630-p-k-no-nu/reactjs-useref-tutorial.jpg",
+    "name": "What is useRef in React?",
+    "description": "The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly."
+  },
+
+  {
+    "id": "004",
+    "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--RF436zBW--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/a53m7wnx69atkts7hz5u.png",
+    "name": "What is useMemo in React?",
+    "description": "During initial rendering, useMemo(compute, dependencies) invokes compute , memoizes the calculation result, and returns it to the component. If the dependencies don't change during the next renderings, then useMemo() doesn't invoke compute , but returns the memoized value."
+  }
+]

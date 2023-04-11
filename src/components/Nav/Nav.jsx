@@ -19,15 +19,17 @@ const Nav = () => {
             <Link to="/appliedJob" className="-case  ">
               Applied Jobs
             </Link>
-            <a className="-case ">Blog</a>
+            <Link to="/Blog">Blog</Link>
           </div>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-info ">
-            <div>
-              <h3>Start Applying</h3>
-            </div>
-          </button>
+          <Link to="/JobDetails">
+            <button className="btn btn-info ">
+              <div>
+                <h3>Start Applying</h3>
+              </div>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

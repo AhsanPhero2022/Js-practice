@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const DetailsChile = ({ data }) => {
+const DetailsChile = ({ data, handleRemoveCart }) => {
   const {
+    id,
     description,
     responsiblity,
     experience,
