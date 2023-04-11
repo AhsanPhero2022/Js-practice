@@ -12,10 +12,15 @@ const Nav = () => {
         </div>
         <div className="navbar-center">
           <div className="grid lg:grid-cols-4 gap-12">
-            <Link to="/FirstPage" className=" normal-case  ">
+            <Link to="/" className=" normal-case  ">
               Home
             </Link>
-            <a className="text-cyan-500 underline normal-case">Statistics</a>
+            <Link
+              to="/Statistic"
+              className="text-cyan-500 underline normal-case"
+            >
+              Statistics
+            </Link>
             <Link to="/appliedJob" className="-case  ">
               Applied Jobs
             </Link>
