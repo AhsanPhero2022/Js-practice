@@ -18,6 +18,7 @@ const AppliedJob = () => {
   }
   return (
     <div>
+      <h2 className="text-right mx-32 ">Filter by</h2>
       {savedCart.map((data) => (
         <AppliedChild key={data.id} data={data} />
       ))}

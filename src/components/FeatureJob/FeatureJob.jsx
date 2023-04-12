@@ -4,7 +4,7 @@ import { addToDb } from "../../utils/fakeDB";
 
 const FeatureJob = () => {
   const [feature, setFeature] = useState([]);
-  const [showAll, setShowAll] = useState([false]);
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     fetch("companyData.json")
@@ -35,7 +35,7 @@ const FeatureJob = () => {
       </div>
       <div className="my-8 text-center">
         <button onClick={() => handleForData()} className="btn btn-success ">
-          Show All
+          See All Jobs
         </button>
       </div>
     </div>
